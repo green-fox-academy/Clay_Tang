@@ -3,6 +3,11 @@
 // Use it on this reversed string to check it!
 
 const reversed = ".eslaf eb t'ndluow ecnetnes siht ,dehctiws erew eslaf dna eurt fo sgninaem eht fI";
+
+function reverse(string){
+  return string.split('').reverse().join('');
+}
+
 console.log(reverse(reversed));
 
 module.exports = reverse;
