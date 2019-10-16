@@ -41,7 +41,7 @@ var product_price = new Map([
   ['Tomato', 2.58],
   ['Potato', 1.75],
   ['Onion', 1.10]
-]);
+])
 
 var bob_shopping_list = new Map([
   ['Milk', 3],
@@ -52,7 +52,7 @@ var bob_shopping_list = new Map([
   ['Apples', 1],
   ['Tomato', 2],
   ['Potato', 1]
-]);
+])
 
 var alice_shopping_list = new Map([
   ['Rice', 1],
@@ -60,21 +60,21 @@ var alice_shopping_list = new Map([
   ['Chicken Breasts', 2],
   ['Apples', 1],
   ['Tomato', 10]
-]);
+])
 
 
 // How much does Bob pay?
 var bob_total = 0;
 bob_shopping_list.forEach((amount, product) => {
   bob_total += product_price.get(product) * amount;
-});
+})
 console.log(bob_total);
 
 // How much does Alice pay?
 var alice_total = 0;
 alice_shopping_list.forEach((amount, product) => {
   alice_total += product_price.get(product) * amount;
-});
+})
 console.log(alice_total);
 
 // Who buys more Rice?
@@ -91,7 +91,7 @@ if (bob_shopping_list.has('Rice')&&alice_shopping_list.has('Rice')){
 } else if (alice_shopping_list.has('Rice') === true ){
   console.log('Alice bought more Rice.');
 } else {
-  console.log('no one bought Rice.')
+  console.log('no one bought Rice.');
 }
 
 

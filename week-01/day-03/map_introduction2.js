@@ -6,12 +6,12 @@ var my_map = new Map([
   ['978-1-60309-452-7', 'Lupus'],
   ['978-1-60309-452-3', 'Red Panda and Moon Bear'],
   ['978-1-60309-452-0', 'The Lab'],
-]);
+])
 
 // Print all the key-value pairs in the following format
 my_map.forEach((value, key) => {
   console.log(`${value} (ISBN: ${key})`);
-});
+})
 
 // Remove the key-value pair with key 978-1-60309-444-3
 my_map.delete('978-1-60309-444-3');
@@ -21,7 +21,7 @@ my_map.forEach((value, key) => {
   if (value === 'The Lab'){
     my_map.delete(key);
   }
-});
+})
 
 // Add the following key-value pairs to the map
 my_map.set('978-1-60309-450-4', 'They Called Us Enemy');

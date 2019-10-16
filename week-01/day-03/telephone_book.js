@@ -16,7 +16,7 @@ var phone_book = new Map([
   ['Hortensia E. Foster', '606-481-6467'],
   ['Amanda D. Newland', '319-243-5613'],
   ['Brooke P. Askew', '307-687-2982'],
-]);
+])
 
 // Create an application which solves the following problems.
 // What is John K. Miller's phone number?
@@ -27,7 +27,7 @@ phone_book.forEach((number, name) => {
   if (number === '307-687-2982'){
     console.log(name);
   }
-});
+})
 
 // Do we know Chris E. Myers' phone number?
 console.log(phone_book.has('Chris E. Myers'));

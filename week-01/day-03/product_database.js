@@ -19,7 +19,7 @@ var product_database = new Map([
   ['Apples', 150],
   ['Bread', 50],
   ['Chicken', 550]
-]);
+])
 
 // How much is the fish?
 console.log(product_database.get('Fish'));
@@ -39,7 +39,7 @@ console.log(most_expensive_product);
 var total = 0;
 product_database.forEach(price => {
   total += price;
-});
+})
 
 console.log(`the average price is: ${total/product_database.size}`);
 
@@ -49,7 +49,7 @@ product_database.forEach(price => {
   if (price < 300) {
     count += 1;
   }
-});
+})
 
 console.log(`${count} products' price is below 300.`);
 
@@ -61,7 +61,7 @@ product_database.forEach(price => {
   if (price === 125 ){
     buy_stuff_with_125 = true;
   } 
-});
+})
 console.log(buy_stuff_with_125);
 
 
