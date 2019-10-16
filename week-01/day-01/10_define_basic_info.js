@@ -5,3 +5,13 @@
 // Your age as an integer
 // Your height in meters as a float
 // Whether you are married or not as a boolean
+
+var name = 'Clay';
+var age = 22;
+var height = 1.75;
+var marriage = false;
+
+console.log(name);
+console.log(age);
+console.log(height);
+console.log(marriage);

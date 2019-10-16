@@ -5,3 +5,10 @@
 //
 // Surface Area: 600
 // Volume: 1000
+
+var side1 = 20;
+var side2 = 30;
+var side3 = 10;
+
+console.log(`Surface Area: ${(side1 * side2 + side2 * side3 + side3 * side1) * 2}`);
+console.log(`Volume: ${side1 * side2 * side3}`);

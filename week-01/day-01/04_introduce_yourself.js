@@ -10,3 +10,7 @@
 //  John Doe
 //  31
 //  1.87
+
+console.log('Clay Tang');
+console.log('22');
+console.log('1.75');

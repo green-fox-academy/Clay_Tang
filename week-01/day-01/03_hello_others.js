@@ -6,3 +6,7 @@
 // Hello, Esther!
 // Hello, Mary!
 // Hello, Joe!
+
+console.log('Hello, dude');
+console.log('Hello, dude');
+console.log('Hello, dude');

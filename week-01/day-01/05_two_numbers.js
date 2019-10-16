@@ -11,3 +11,9 @@
 // Print the result of 22 divided by 13 (as a decimal fraction)
 
 // Print the reminder of 22 divided by 13
+
+console.log(13 + 22);
+console.log(22 - 13);
+console.log(22 * 13);
+console.log(22 / 13);
+console.log(22 % 13);
