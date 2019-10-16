@@ -14,6 +14,6 @@ const lineCount = 4;
 
 var output = ''
 for (let i = 1; i <= lineCount; i++) {
-    output += '*';
-    console.log(output);
+  output += '*';
+  console.log(output);
 }

@@ -4,11 +4,11 @@
 // - The function should return the result
 
 function sum(num){
-    var total = 0;
-        for (var i = 1; i <= num; i++){
-            total += i;
-        }
-    return total;
+  var total = 0;
+    for (var i = 1; i <= num; i++){
+      total += i;
+    }
+  return total;
 }
 
 console.log(sum(100))

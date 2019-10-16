@@ -7,7 +7,7 @@
 
 var am = 'dog';
 function appendS(string){
-    return string += 's';
+  return string += 's';
 }
 
 console.log(appendS(am));

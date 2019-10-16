@@ -8,5 +8,5 @@
 const af = [4, 5, 6, 7];
 
 af.forEach((i) => {
-    console.log(i);
+  console.log(i);
 })

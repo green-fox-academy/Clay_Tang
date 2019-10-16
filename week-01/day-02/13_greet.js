@@ -8,7 +8,7 @@
 
 var al = 'EPAM';
 function Greet(param = 'Sir/Madam'){
-    console.log(`Greetings, dear ${param}`);
+  console.log(`Greetings, dear ${param}`);
 }
 
 Greet(al)

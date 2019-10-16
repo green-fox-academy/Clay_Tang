@@ -6,7 +6,7 @@
 // - try to use built in functions instead of loops
 
 const animals = ['dog', 'cat', 'kitten'].map((i) => {
-    return i += 's';
+  return i += 's';
 })
 
 console.log(animals);

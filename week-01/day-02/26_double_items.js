@@ -6,7 +6,7 @@
 
 
 const ag = ['Gin', 'Whiskey', 'Wine', 'Beer'].map((i) => {
-    return i += i;
+  return i += i;
 })
 
 console.log(ag);

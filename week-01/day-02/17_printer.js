@@ -5,9 +5,9 @@
 //   (can have multiple number of arguments)
 
 function printer(){
-    for (var i = 0; i < arguments.length; i++){
-        console.log(arguments[i]);
-    }
+  for (var i = 0; i < arguments.length; i++){
+    console.log(arguments[i]);
+  }
 }
 
 printer(123,'231sdfs','hello, motherfker')
