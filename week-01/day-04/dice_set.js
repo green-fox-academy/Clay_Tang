@@ -41,22 +41,36 @@ class DiceSet {
 // You can reroll with reroll()
 // Your task is to roll the dice until all of the dice are 6
 
-const diceSet = new DiceSet();
-console.log(diceSet.roll());
-console.log(diceSet.getCurrent());
+// const diceSet = new DiceSet();
+// console.log(diceSet.roll());
+// console.log(diceSet.getCurrent());
 
-console.log('------------------');
+// console.log('------------------');
 
-diceSet.reroll();
-console.log(diceSet.getCurrent());
+// diceSet.reroll();
+// console.log(diceSet.getCurrent());
 
-console.log('------------------');
+// console.log('------------------');
 
-console.log(diceSet.getCurrent(5));
-diceSet.reroll();
-console.log(diceSet.getCurrent());
+// console.log(diceSet.getCurrent(5));
+// diceSet.reroll();
+// console.log(diceSet.getCurrent());
 
-console.log('------------------');
+// console.log('------------------');
 
-diceSet.reroll(4);
-console.log(diceSet.getCurrent());
+// diceSet.reroll(4);
+// console.log(diceSet.getCurrent());
+
+const dice_for_all_fucking_six = new DiceSet();
+dice_for_all_fucking_six.roll()
+
+
+dice_for_all_fucking_six.getCurrent().forEach((six_only, index) =>{
+  while (six_only!==6){
+    dice_for_all_fucking_six.reroll(index);
+    six_only = dice_for_all_fucking_six.getCurrent(index);
+    // console.log(dice_for_all_fucking_six.getCurrent());
+  } 
+})
+
+console.log(dice_for_all_fucking_six.getCurrent());
