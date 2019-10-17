@@ -3,7 +3,7 @@
 const Thing = require('./thing.js');
 const Fleet = require('./fleet.js');
 
-const fleet = new Fleet();
+// const fleet = new Fleet();
 
 // -  You have the `Thing` class
 // -  You have the `Fleet` class
@@ -14,16 +14,50 @@ const fleet = new Fleet();
 //  Crete a fleet of things to have this output:
 
 class FleetOfThings{
-  static things_order = 0;
-  constructor() {
-    this.things = Fleet.things;
-    this.completed = Thing.completed;
-    
+
+  constructor() {}
+  
+  main(){
+    var item1 = new Thing('Get milk');
+    var item2 = new Thing('Remove the obstacles');
+    var item3 = new Thing('Stand up');
+    var item4 = new Thing('Eat lunch');
+    item3.complete();
+    item4.complete();
+
+    this.fleet = new Fleet;
+    this.fleet.add(item1);
+    this.fleet.add(item2);
+    this.fleet.add(item3);
+    this.fleet.add(item4);
+ 
   }
+
   print(){
 
+    this.fleet.getThings().forEach((thing, i) =>{
+
+      if (thing.getCompleted()){
+
+        console.log(`${i+1}. [x] ${thing.getName()}`);
+
+      } else {
+
+        console.log(`${i+1}. [ ] ${thing.getName()}`);
+
+      }  
+    })
+
   }
+
 }
+
+
+var f_o_t = new FleetOfThings();
+
+f_o_t.main();
+f_o_t.print();
+
 
 // 1. [ ] Get milk
 // 2. [ ] Remove the obstacles
