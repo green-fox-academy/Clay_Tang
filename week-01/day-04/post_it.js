@@ -1,3 +1,4 @@
+'use strict';
 // Create a PostIt a class that has
 // a backgroundColor
 // a text on it

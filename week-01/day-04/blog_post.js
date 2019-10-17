@@ -1,3 +1,4 @@
+'use strict';
 // Create a BlogPost class that has
       // an authorName
       // a title

@@ -52,16 +52,12 @@ class FleetOfThings{
 
 }
 
-
 var f_o_t = new FleetOfThings();
-
 f_o_t.main();
 f_o_t.print();
-
 
 // 1. [ ] Get milk
 // 2. [ ] Remove the obstacles
 // 3. [x] Stand up
 // 4. [x] Eat lunch
-
 // Hint: You have to create a `print()` method as well

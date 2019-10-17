@@ -1,3 +1,4 @@
+'use strict';
 // Create Sharpie class
 // We should know each sharpie's color, width and inkAmount
 // When creating one, we need to specify the color and the width
@@ -15,3 +16,5 @@ class Sharpie{
     this.inkAmount--;
   }
 }
+
+module.exports = Sharpie;

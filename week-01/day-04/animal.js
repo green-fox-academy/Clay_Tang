@@ -1,3 +1,4 @@
+'use strict';
 // Create an Animal class
 // Every animal has a hunger and a thirst value
 // When creating a new animal object, these values are created with the default 50 value

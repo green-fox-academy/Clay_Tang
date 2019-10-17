@@ -1,3 +1,4 @@
+'use strict';
 // Create Student and Teacher classes
 // Student
 // learn() -> prints the student is learning something new
