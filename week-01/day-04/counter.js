@@ -17,7 +17,7 @@ class Counter{
     this.integer+=number;
   }
   get(){
-    console.log(`${this.integer}`);
+    return `${this.integer}`;
   }
   reset(){
     this.integer = this.initial_value;
