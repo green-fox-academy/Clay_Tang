@@ -32,11 +32,11 @@ product_database.forEach((price, name) => {
 console.log(...products_less_than_201);
 
 // Which products cost more than 150? (name + price)
-var products_more_than_150 = []
+var products_more_than_150 = {}
 product_database.forEach((price, name) => {
   if (price > 150){
-    products_more_than_150.push(name);
+    products_more_than_150[name] = price;
   }
 })
 
-console.log(...products_more_than_150);
+console.log(products_more_than_150);
