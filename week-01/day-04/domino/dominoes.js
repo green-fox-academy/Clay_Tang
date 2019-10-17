@@ -18,4 +18,13 @@ const dominoes = initializeDominoes();
 /** Order them into one snake where the adjacent dominoes have the same numbers on their adjacent sides */
 /** eg: [2, 4], [4, 3], [3, 5] ... */
 
+
+// var new_dominoes = [];
+
+// dominoes.forEach((values, index) => {
+//   var new_dominoes = [];
+  
+// })
+
+
 console.log(dominoes.toString());
