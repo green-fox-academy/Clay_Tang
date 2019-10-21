@@ -30,10 +30,10 @@ console.log(mapWith([1, 2, 3], addOne));
 const words = ['map', 'reduce', 'filter'];
 
 const removeSecondLetter = (string) => {
-  for (let i = 1; i < string.length; i++){
-    if (i % 2 === 1){
+  for (let i = 1; i < string.length; i++) {
+    if (i % 2 === 1) {
       string = string.replace(string[i], ' ');
-    }   
+    }
   }
 
   return string.split(' ').join('');

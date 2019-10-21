@@ -6,7 +6,8 @@
 // - Print the result of `appendS(am)` to the console
 
 var am = 'dog';
-function appendS(string){
+
+function appendS(string) {
   return string += 's';
 }
 

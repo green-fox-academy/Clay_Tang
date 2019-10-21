@@ -19,8 +19,7 @@ const number = 15;
 // 9 * 15 = 135
 // 10 * 15 = 150
 
-for (let i = 1; i <=10; i++){
+for (let i = 1; i <= 10; i++) {
   console.log(`${i} ${'*'} ${number} ${'='} ${i * number}`);
   // console.log(i + ' * ' + number + ' = ' + i * number);
 }
-

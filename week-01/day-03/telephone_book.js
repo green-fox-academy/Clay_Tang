@@ -24,7 +24,7 @@ console.log(phone_book.get('John K. Miller'));
 
 // Whose phone number is 307-687-2982?
 phone_book.forEach((number, name) => {
-  if (number === '307-687-2982'){
+  if (number === '307-687-2982') {
     console.log(name);
   }
 })

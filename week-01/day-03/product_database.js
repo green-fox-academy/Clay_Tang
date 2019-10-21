@@ -26,9 +26,9 @@ console.log(product_database.get('Fish'));
 
 // What is the most expensive product?
 var most_expensive_price = 0;
-var most_expensive_product ='';
+var most_expensive_product = '';
 product_database.forEach((price, product) => {
-  if (price > most_expensive_price){
+  if (price > most_expensive_price) {
     most_expensive_price = price;
     most_expensive_product = product;
   }
@@ -58,18 +58,18 @@ console.log(`${count} products' price is below 300.`);
 // Is there anything we can buy for exactly 125?
 var buy_stuff_with_125 = false;
 product_database.forEach(price => {
-  if (price === 125 ){
+  if (price === 125) {
     buy_stuff_with_125 = true;
-  } 
+  }
 })
 console.log(buy_stuff_with_125);
 
 
 // What is the cheapest product?
 var cheapest_price = Number.MAX_SAFE_INTEGER;
-var cheapest_product ='';
+var cheapest_product = '';
 product_database.forEach((price, product) => {
-  if (price < cheapest_price){
+  if (price < cheapest_price) {
     cheapest_price = price;
     cheapest_product = product;
   }

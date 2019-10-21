@@ -5,6 +5,7 @@
 // - Log the result of `doubling(ak)` to the console
 
 var ak = 123;
+
 function doubling(param) {
   return param * 2;
 }

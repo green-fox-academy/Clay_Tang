@@ -20,10 +20,10 @@ const lineCount = 7;
 
 var central_line = Math.ceil(lineCount / 2);
 
-for (var i = 1; i <= lineCount; i++){
-  if (i <= central_line){
-    console.log(' '.repeat(central_line - i) + '*'.repeat(2 * (i - 1) + 1) );
+for (var i = 1; i <= lineCount; i++) {
+  if (i <= central_line) {
+    console.log(' '.repeat(central_line - i) + '*'.repeat(2 * (i - 1) + 1));
   } else {
-    console.log(' '.repeat(i - central_line) + '*'.repeat( (lineCount-i) * 2 + 1) );
+    console.log(' '.repeat(i - central_line) + '*'.repeat((lineCount - i) * 2 + 1));
   }
 }

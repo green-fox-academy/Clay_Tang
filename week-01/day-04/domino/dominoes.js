@@ -19,11 +19,11 @@ const dominoes = initializeDominoes();
 /** eg: [2, 4], [4, 3], [3, 5] ... */
 
 
-function check(domino1, domino2){
+function check(domino1, domino2) {
   return domino1.values[1] === domino2.values[0];
 }
 
-function rightOrder(dominoes){
+function rightOrder(dominoes) {
   for (let i = 0; i < dominoes.length - 1; i++) {
     if (i === dominoes.length - 2) {
       break;

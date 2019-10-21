@@ -18,7 +18,7 @@ my_map.delete('978-1-60309-444-3');
 
 // Remove the key-value pair with value The Lab
 my_map.forEach((value, key) => {
-  if (value === 'The Lab'){
+  if (value === 'The Lab') {
     my_map.delete(key);
   }
 })

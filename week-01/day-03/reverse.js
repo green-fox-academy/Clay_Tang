@@ -4,7 +4,7 @@
 
 const reversed = ".eslaf eb t'ndluow ecnetnes siht ,dehctiws erew eslaf dna eurt fo sgninaem eht fI";
 
-function reverse(string){
+function reverse(string) {
   return string.split('').reverse().join('');
 }
 

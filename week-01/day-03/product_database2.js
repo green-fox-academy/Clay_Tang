@@ -24,7 +24,7 @@ var product_database = new Map([
 // Which products cost less than 201? (just the name)
 var products_less_than_201 = []
 product_database.forEach((price, name) => {
-  if (price < 201){
+  if (price < 201) {
     products_less_than_201.push(name);
   }
 })
@@ -34,7 +34,7 @@ console.log(...products_less_than_201);
 // Which products cost more than 150? (name + price)
 var products_more_than_150 = {}
 product_database.forEach((price, name) => {
-  if (price > 150){
+  if (price > 150) {
     products_more_than_150[name] = price;
   }
 })

@@ -9,4 +9,4 @@ const currentSeconds = 42;
 
 console.log(
   `The remaining seconds: ${ (24 * 60 * 60) - ( currentHours * 60 * 60 + currentMinutes * 60 + currentSeconds ) }`
-  );
+);

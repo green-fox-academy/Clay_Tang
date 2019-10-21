@@ -3,7 +3,6 @@
 // Also, the URL is missing a crutial component, find out what it is and insert it too!
 
 var url = "https//www.reddit.com/r/nevertellmethebots";
-url = url.replace('bots', 'odds').replace('s','s:');
-
+url = url.replace('bots', 'odds').replace('s', 's:');
 
 console.log(url);

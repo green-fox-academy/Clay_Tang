@@ -4,7 +4,7 @@
 var my_map = new Map();
 
 // print out whether the map is empty or not
-if (my_map.size === 0){
+if (my_map.size === 0) {
   console.log('the map is empty!');
 } else {
   console.log('its not empty.');
@@ -41,4 +41,3 @@ console.log(my_map.has(100));
 
 // remove all the key-value pairs
 my_map.clear();
-

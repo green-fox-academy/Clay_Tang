@@ -4,8 +4,8 @@
 // a text on it
 // a textColor
 
-class PostIt{
-  constructor (text, bgColor, textColor){
+class PostIt {
+  constructor(text, bgColor, textColor) {
     this.backgroundColor = bgColor;
     this.text = text;
     this.textColor = textColor;

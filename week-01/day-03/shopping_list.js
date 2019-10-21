@@ -80,16 +80,16 @@ console.log(alice_total);
 
 // Who buys more Rice?
 if (bob_shopping_list.has('Rice') && alice_shopping_list.has('Rice')) {
-  if ( bob_shopping_list.get('Rice') > alice_shopping_list.get('Rice') ){
+  if (bob_shopping_list.get('Rice') > alice_shopping_list.get('Rice')) {
     console.log('Bob bought more Rice.');
   } else if (bob_shopping_list.get('Rice') < alice_shopping_list.get('Rice')) {
     console.log('Alice bought more Rice.');
   } else {
     console.log('Same.');
   }
-} else if (bob_shopping_list.has('Rice') === true ){
+} else if (bob_shopping_list.has('Rice') === true) {
   console.log('Bob bought more Rice.');
-} else if (alice_shopping_list.has('Rice') === true ){
+} else if (alice_shopping_list.has('Rice') === true) {
   console.log('Alice bought more Rice.');
 } else {
   console.log('no one bought Rice.');
@@ -99,17 +99,17 @@ if (bob_shopping_list.has('Rice') && alice_shopping_list.has('Rice')) {
 
 
 // Who buys more Potato?
-if (bob_shopping_list.has('Potato')&&alice_shopping_list.has('Potato')){
-  if ( bob_shopping_list.get('Potato') > alice_shopping_list.get('Potato') ){
+if (bob_shopping_list.has('Potato') && alice_shopping_list.has('Potato')) {
+  if (bob_shopping_list.get('Potato') > alice_shopping_list.get('Potato')) {
     console.log('Bob bought more Potato.');
   } else if (bob_shopping_list.get('Potato') < alice_shopping_list.get('Potato')) {
     console.log('Alice bought more Potato.');
   } else {
     console.log('Same.');
   }
-} else if (bob_shopping_list.has('Potato') === true ){
+} else if (bob_shopping_list.has('Potato') === true) {
   console.log('Bob bought more Potato.');
-} else if (alice_shopping_list.has('Potato') === true ){
+} else if (alice_shopping_list.has('Potato') === true) {
   console.log('Alice bought more Potato.');
 } else {
   console.log('no one bought Potato.');
@@ -117,9 +117,9 @@ if (bob_shopping_list.has('Potato')&&alice_shopping_list.has('Potato')){
 
 
 // Who buys more different products?
-if (bob_shopping_list.size > alice_shopping_list.size){
+if (bob_shopping_list.size > alice_shopping_list.size) {
   console.log('Bob bought more different products.');
-} else if (alice_shopping_list.size > bob_shopping_list.size){
+} else if (alice_shopping_list.size > bob_shopping_list.size) {
   console.log('Alice bought more different products.');
 } else {
   console.log('Same different products.');
@@ -136,9 +136,9 @@ alice_shopping_list.forEach(amount => {
   alice_total_products += amount;
 })
 
-if (bob_total_products > alice_total_products){
+if (bob_total_products > alice_total_products) {
   console.log('Bob bought more products.');
-} else if (alice_total_products > bob_total_products){
+} else if (alice_total_products > bob_total_products) {
   console.log('Alice bought more products.');
 } else {
   console.log('Same amount of products.');
