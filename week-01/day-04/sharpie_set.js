@@ -28,9 +28,10 @@ class SharpieSet{
   }
   
   removeTrash(){
-    this.list = this.list.filter((item) => {
-			return item.inkAmount > 0;
-		})
+    // this.list = this.list.filter((item) => {
+    // 	return item.inkAmount > 0;
+      return this.list.filter(item => item.inkAmount > 0);
+		// })
   }
 
 }

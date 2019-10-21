@@ -1,3 +1,4 @@
+'use strict';
 // Represent the following products with their prices
 
 // Product	Amount
@@ -78,7 +79,7 @@ alice_shopping_list.forEach((amount, product) => {
 console.log(alice_total);
 
 // Who buys more Rice?
-if (bob_shopping_list.has('Rice')&&alice_shopping_list.has('Rice')){
+if (bob_shopping_list.has('Rice') && alice_shopping_list.has('Rice')) {
   if ( bob_shopping_list.get('Rice') > alice_shopping_list.get('Rice') ){
     console.log('Bob bought more Rice.');
   } else if (bob_shopping_list.get('Rice') < alice_shopping_list.get('Rice')) {
