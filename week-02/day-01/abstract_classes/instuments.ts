@@ -53,6 +53,8 @@ export class Violin extends StringedInstrument {
     return 'Screech';
   }
 }
+
+
 // it reserves (e.g. protected) the name of the instrument
 // it should provide a play() method.
 // Next, we add another abstract class, StringedInstrument which extends Instrument. It
