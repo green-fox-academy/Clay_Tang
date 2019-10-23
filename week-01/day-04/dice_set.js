@@ -64,13 +64,12 @@ class DiceSet {
 const dice_for_all_fucking_six = new DiceSet();
 dice_for_all_fucking_six.roll()
 
-
-dice_for_all_fucking_six.getCurrent().forEach((six_only, index) =>{
-  while (six_only!==6){
+dice_for_all_fucking_six.getCurrent().forEach((six_only, index) => {
+  while (six_only !== 6) {
     dice_for_all_fucking_six.reroll(index);
     six_only = dice_for_all_fucking_six.getCurrent(index);
     // console.log(dice_for_all_fucking_six.getCurrent());
-  } 
+  }
 })
 
 console.log(dice_for_all_fucking_six.getCurrent());

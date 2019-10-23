@@ -23,7 +23,7 @@ function initializePokemon() {
     new Pokemon('Charizard', 'fire', 'leaf'),
     new Pokemon('Balbasaur', 'water', 'fire'),
     new Pokemon('Kingler', 'water', 'fire')
-  ];
+  ]
 }
 
 pokemonOfAsh.forEach(pokemon => {
@@ -31,8 +31,5 @@ pokemonOfAsh.forEach(pokemon => {
     console.log(`${pokemon.name} !`);
   }
 })
-  
-
-
 
 // console.log(pokemonOfAsh)

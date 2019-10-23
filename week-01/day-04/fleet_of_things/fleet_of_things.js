@@ -13,11 +13,11 @@ const Fleet = require('./fleet.js');
 // -  Achieve this output:
 //  Crete a fleet of things to have this output:
 
-class FleetOfThings{
+class FleetOfThings {
 
   constructor() {}
-  
-  main(){
+
+  main() {
     var item1 = new Thing('Get milk');
     var item2 = new Thing('Remove the obstacles');
     var item3 = new Thing('Stand up');
@@ -30,14 +30,14 @@ class FleetOfThings{
     this.fleet.add(item2);
     this.fleet.add(item3);
     this.fleet.add(item4);
- 
+
   }
 
-  print(){
+  print() {
 
-    this.fleet.getThings().forEach((thing, i) =>{
+    this.fleet.getThings().forEach((thing, i) => {
 
-      if (thing.getCompleted()){
+      if (thing.getCompleted()) {
 
         console.log(`${i+1}. [x] ${thing.getName()}`);
 
@@ -45,7 +45,7 @@ class FleetOfThings{
 
         console.log(`${i+1}. [ ] ${thing.getName()}`);
 
-      }  
+      }
     })
 
   }

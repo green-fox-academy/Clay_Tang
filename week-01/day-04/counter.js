@@ -7,21 +7,20 @@
 // and we can get() the current value as string
 // also we can reset() the value to the initial value
 
-class Counter{
-  constructor(integer = 0){
+class Counter {
+  constructor(integer = 0) {
     this.integer = integer;
     this.initial_value = integer;
   }
 
 
-  add(number = 1){
-    this.integer+=number;
+  add(number = 1) {
+    this.integer += number;
   }
-  get(){
+  get() {
     return `${this.integer}`;
   }
-  reset(){
+  reset() {
     this.integer = this.initial_value;
   }
 }
-
