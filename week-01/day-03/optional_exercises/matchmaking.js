@@ -18,7 +18,7 @@ function makingMatches(array1, array2) {
       newArray.push(array2[i]);
     }
   }
-  return newArray
+  return newArray;
 }
 
 console.log(makingMatches(girls, boys));
