@@ -7,34 +7,35 @@
 
 const Sharpie = require('./sharpie.js');
 
-class SharpieSet{
+class SharpieSet {
 
-  constructor(){
+  constructor() {
     this.sharpie_set = [];
-    this.sharpie_set.push(new Sharpie('black','1',50));
-    this.sharpie_set.push(new Sharpie('blue','2',80));
-    this.sharpie_set.push(new Sharpie('red','1',0));
-    this.sharpie_set.push(new Sharpie('green','2',0));
+    this.sharpie_set.push(new Sharpie('black', '1', 50));
+    this.sharpie_set.push(new Sharpie('blue', '2', 80));
+    this.sharpie_set.push(new Sharpie('red', '1', 0));
+    this.sharpie_set.push(new Sharpie('green', '2', 0));
   }
 
-  countUsable(){
+  countUsable() {
     let amount = 0;
-		for (let i = 0; i < this.sharpie_set.length; i++) {
-			if (this.sharpie_set[i].inkAmount > 0) {
-				amount++;
-			}
-		}
-		return amount;
+    for (let i = 0; i < this.sharpie_set.length; i++) {
+      if (this.sharpie_set[i].inkAmount > 0) {
+        amount++;
+      }
+    }
+    return amount;
   }
-  
-  removeTrash(){
+
+  removeTrash() {
     // this.list = this.list.filter((item) => {
     // 	return item.inkAmount > 0;
-      return this.list.filter(item => item.inkAmount > 0);
-		// })
+    return this.list.filter(item => item.inkAmount > 0);
+    // })
   }
 
 }
 
 var new_sharpies = new SharpieSet();
 console.log(new_sharpies.countUsable());
+

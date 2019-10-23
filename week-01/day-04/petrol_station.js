@@ -10,22 +10,27 @@
 // initialize gasAmount -> 0
 // initialize capacity -> 100
 
-class Station{
-  constructor(gasAmout=Number.MAX_SAFE_INTEGER){
-    this.gasAmout = gasAmout;
+class Station {
+  constructor(gasAmount = Number.MAX_SAFE_INTEGER) {
+    this.gasAmount = gasAmount;
 
   }
-  refill(car){
-    this.gasAmout -= car.capacity;
-    car.gasAmout += car.capacity;
+  refill(car) {
+    if (this.gasAmount >= car.capacity) {
+      this.gasAmount -= car.capacity;
+      car.gasAmount += car.capacity;
+    } else {
+      return 'not enough gas';
+    }
+
   }
 }
 
 
-class Car{
-  constructor(capacity=100, gasAmout=0){
+class Car {
+  constructor(capacity = 100, gasAmount = 0) {
     this.capacity = capacity;
-    this.gasAmout = gasAmout;
+    this.gasAmount = gasAmount;
   }
 
 }
