@@ -111,14 +111,14 @@ class Sponsor extends Person{
   constructor(name = 'Jane Doe', age = 30, gender = 'female', company = 'Google'){
     super(name, age, gender);
     this.company = company;
-    this.hireStudents = 0;
+    this.hiredStudents = 0;
   }
   introduce(){
     console.log(`Hi, I'm ${this.name}, a ${this.age} year old ${this.gender} who represents ${this.company} \
-and hired ${this.hireStudents} students so far.`);
+and hired ${this.hiredStudents} students so far.`);
   }
   hire(){
-    this.hireStudents++;
+    this.hiredStudents++;
   }
   getGoal(){
     console.log('Mt goal is: Hire brilliant junior software developers.');

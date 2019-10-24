@@ -2,6 +2,52 @@
 
 // Aircrafts
 // Create a class that represents an aircraft
+
+class Aircraft {
+  constructor(type, ammunition, baseDamage, maxAmmo) {
+    this.type = type;
+    this.ammunition = ammunition;
+    this.baseDamage = baseDamage;
+    this.maxAmmo = maxAmmo;
+  }
+  fight() {
+    this.ammunition = 0;
+    return this.ammunition * this.baseDamage;
+  }
+  refill(ammoNum) {
+    if (ammoNum >= this.maxAmmo) {
+      this.ammunition += this.maxAmmo;
+      ammoNum -= this.maxAmmo;
+    } else {
+      this.ammunition += ammoNum;
+      ammoNum = 0;
+    }
+    return ammoNum;
+  }
+  getType() {
+    return `${this.type}`
+  }
+  getTheStatus() {
+    return `Type: ${this.type}, Ammo: ${this.ammunition}, Base Damage: ${this.baseDamage}, All Damage: ${this.ammunition * this.baseDamage}`;
+  }
+  isPriority() {
+    return this.type === 'F35';
+  }
+}
+
+class F16 extends Aircraft {
+  constructor(type = 'F16', ammunition = 0, baseDamage = 30, maxAmmo = 8) {
+    super(type, ammunition, baseDamage, maxAmmo)
+  }
+}
+
+class F35 extends Aircraft {
+  constructor(type = 'F35', ammunition = 0, baseDamage = 50, maxAmmo = 12) {
+    super(type, ammunition, baseDamage, maxAmmo)
+  }
+}
+
+
 // There are 2 types of aircrafts: F16 and F35
 // Both aircrafts should keep track of their ammunition
 // F16
@@ -11,68 +57,6 @@
 // Max ammo: 12
 // Base damage: 50
 // All aircrafts should be created with an empty ammo storage
-
-class Aircraft{
-  constructor(typeName) {
-    this.ammo = 0;
-    this.type = typeName;
-
-    switch (this.type) {
-      case 'F16':
-        this.damage = 30;
-        this.maxAmmo = 8;
-        break
-      case 'F35':
-        this.damage = 50;
-        this.maxAmmo = 12;
-        break
-      default:
-        this.damage = 0;
-        this.maxAmmo = 0;
-        break;;
-    }
-  }
-
-  get neededAmmo() {
-    return this.maxAmmo - this.ammo;
-  }
-
-  get totalFire() {
-    return this.ammo * this.damage;
-  }
-
-  fight() {
-    let allDamage = this.totalFire;
-    this.ammo = 0;
-    return allDamage;
-  }
-
-  refill(ammoAmount) {
-    if (ammoAmount < 0) {
-      return 0;
-    }
-
-    let ammoNeedToLoad = this.neededAmmo;
-    if (ammoAmount > ammoNeedToLoad) {
-      this.ammo = this.maxAmmo;
-      return ammoAmount - ammoNeedToLoad;
-    }
-    this.ammo += ammoAmount;
-    return 0;
-  }
-  getType(){
-    return this.typeName;
-  }
-  getStatus(){
-
-  }
-  isPriority(){
-
-  }
-
-}
-
-
 
 // Methods
 // fight
@@ -94,28 +78,82 @@ class Aircraft{
 // Carrier
 // Create a class that represents an aircraft-carrier
 
+class Carrier {
+  constructor(ammoStore, hp = 1000) {
+    this.aircrafts = [];
+    this.ammoStore = ammoStore;
+    this.hp = hp;
+  }
+  add(type) {
+    this.aircrafts.push(type);
+  }
+  fill(fillAmmo) {
+    let total = 0;
+    if (fillAmmo === 0) {
+      return 'No Ammoooooooo!';
+    } else {
+      this.aircrafts.forEach(value => {
+        value.refill(fillAmmo);
+        total += value.maxAmmo;
+        if (fillAmmo <= 12) {
+          if (value.isPriority()) {
+            value.refill(fillAmmo);
+            total += value.maxAmmo;
+          }
+        }
+      })
+    }
+    this.ammoStore -= total;
+  }
+  fight(otherCarrier) {
+    this.aircrafts.forEach(value => {
+      otherCarrier.hp -= value.ammunition * value.baseDamage;
+    })
+    otherCarrier.aircrafts.forEach(value => {
+      this.hp -= value.ammunition * value.baseDamage;
+    })
+  }
+  getStatus() {
+    let totalDamage = 0;
+    this.aircrafts.forEach(value => {
+      totalDamage += value.ammunition * value.baseDamage;
+    })
+    if (this.hp === 0) {
+      console.log('Its dead Jim :(')
+    } else {
+      console.log(`HP: ${this.hp}, Aircraft count: ${this.aircrafts.length}, Ammo Storage: ${this.ammoStore}, Total damage: ${totalDamage}`)
+      console.log('Aircrafts:')
+      this.aircrafts.forEach(value => {
+        console.log(value.getTheStatus());
+      })
+    }
+
+  }
+}
+
+
+var newCarrier = new Carrier(5000);
+var newCarrier2 = new Carrier(4000);
+newCarrier.getStatus();
+newCarrier2.getStatus();
+newCarrier.add(new F16);
+newCarrier.add(new F16);
+newCarrier.add(new F35);
+newCarrier.add(new F35);
+newCarrier.add(new F35);
+newCarrier.fill(1000);
+newCarrier.getStatus();
+newCarrier2.getStatus();
+console.log('=======fighting======')
+newCarrier.fight(newCarrier2);
+newCarrier.getStatus();
+newCarrier2.getStatus();
+
 // The carrier should be able to store aircrafts
 // Each carrier should have a store of ammo represented as number
 // The initial ammo should be given by a parameter in its constructor
 // The carrier also has a health point given in its constructor as well
 
-class Carrier{
-  constructor(){
-
-  }
-  add(){
-
-  }
-  fill(){
-
-  }
-  fight(){
-
-  }
-  getStatus(){
-    
-  }
-}
 
 // Methods
 // add
