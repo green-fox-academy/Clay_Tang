@@ -1,4 +1,4 @@
-interface LinkedList {
+export interface LinkedList {
   add(value: string, index?: number): void;
   get(index: number): string;
   removeItem(value: string): void;
@@ -6,21 +6,21 @@ interface LinkedList {
   size(): number;
 }
 
-interface Stack {
+export interface Stack {
   empty(): boolean;
   peek(): string;
   push(value: string): void;
   pop(): string;
 }
 
-interface Queue {
+export interface Queue {
   empty(): boolean;
   peek(): string;
   add(value: string): void;
   remove(): string;
 }
 
-interface Tree {
+export interface Tree {
   empty(): boolean;
   add(value: string): void;
   remove(value: string): void;
