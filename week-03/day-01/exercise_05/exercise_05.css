@@ -1,0 +1,24 @@
+h1{
+  color:rgb(15,34,238);
+}
+
+h2 {
+  color:rgb(242,167,44);
+}
+
+
+ul.outer {
+  list-style-type: square;
+}
+
+li.outside{
+  color:blue;
+}
+
+ul.inner {
+  list-style-type: disc;
+}
+
+#apple {
+  color:red;
+}

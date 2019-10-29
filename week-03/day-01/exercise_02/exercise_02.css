@@ -1,0 +1,29 @@
+div {
+  border: solid 15px rgb(70, 136, 241);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:white;
+  font-size: 36px;
+  width: 380px;
+}
+
+div .ex2 {
+  display: block;
+  text-align: center;
+  padding:50px 0px;
+}
+
+div east {
+  background-color: rgb(228,119,120); 
+}
+
+div north {
+  background-color: rgb(242,239,109);
+}
+
+div south {
+  background-color: rgb(171,230,230);
+}
+
+div west {
+  background-color: rgb(120,148,226);
+}

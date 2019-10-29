@@ -1,0 +1,25 @@
+div {
+  border: solid 1px blue;
+  margin: 5px;
+  display: inline-block;
+  padding: 10px;
+}
+
+.inner {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  margin: 5px;
+}
+
+.top .inner {
+  background-color: rgb(70, 136, 241);
+}
+
+.bottom {
+  background-color: rgb(253, 100, 78);
+}
+
+.bottom .inner {
+  background-color: rgb(100, 56, 120);
+}

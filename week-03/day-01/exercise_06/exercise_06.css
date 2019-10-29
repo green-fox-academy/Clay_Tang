@@ -1,0 +1,10 @@
+body {
+  font-size: 18px;
+}
+
+p {
+  width: 400px;
+  border-left: solid 2px black;
+  padding-left: 20px;
+}
+
