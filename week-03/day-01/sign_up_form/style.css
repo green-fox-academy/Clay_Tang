@@ -17,6 +17,7 @@ form{
   border-radius: 0.1rem;
   margin: 10px auto;
   padding: 20px;
+
 }
 
 section.form{
@@ -69,5 +70,5 @@ button{
   background-color: rgb(35,160,133);
   font-size: 17px;
   font-weight: bold;
-  margin: 20px 0;
+  margin: 20px 0 10px 20px;
 }
