@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}
+
+
+.item {
+  height: 200px;
+}
+
+.green {
+  background-color: green;
+  flex-grow: 1;
+}
+
+.yellow {
+  background-color: yellow;
+  flex-grow: 2;
+
+}
+
+.purple {
+  background-color: purple;
+  flex-grow: 1;
+}

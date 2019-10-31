@@ -1,0 +1,29 @@
+html{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  display:flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  height: 300px;
+  width: 100%;
+  background-color: yellow;
+  align-items: flex-end;
+  justify-content: flex-end;
+  list-style-type: none;
+  padding:0;
+  margin: 10px 50px;
+}
+
+.item {
+  background-color: purple;
+  width: 100px;
+  height: 100px;
+  margin: 0 0 0 5px;
+}
+
