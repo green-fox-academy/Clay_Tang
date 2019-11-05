@@ -1,4 +1,4 @@
-export default{
+export default {
   filters: {
     'Star rating': [{
         name: '1 star',
