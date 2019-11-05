@@ -1,20 +1,41 @@
 let data = {
   filters: {
-    'Star rating': [
-      { name: '1 star', checked: false },
-      { name: '2 stars', checked: false },
-      { name: '3 stars', checked: false },
-      { name: '4 stars', checked: false },
-      { name: '5 stars', checked: true },
+    'Star rating': [{
+        name: '1 star',
+        checked: false
+      },
+      {
+        name: '2 stars',
+        checked: false
+      },
+      {
+        name: '3 stars',
+        checked: false
+      },
+      {
+        name: '4 stars',
+        checked: false
+      },
+      {
+        name: '5 stars',
+        checked: true
+      },
     ],
-    'Property type': [
-      { name: 'Apartments', checked: false },
-      { name: 'Hotels', checked: false },
-      { name: 'Hostels', checked: false },
+    'Property type': [{
+        name: 'Apartments',
+        checked: false
+      },
+      {
+        name: 'Hotels',
+        checked: false
+      },
+      {
+        name: 'Hostels',
+        checked: false
+      },
     ]
   },
-  hotels: [
-    {
+  hotels: [{
       name: 'Hotel des Vosges',
       description: 'Located in the 20th district of Paris, just 700 metres from Père Lachaise Cemetery, Hotel des Vosges offers a 24-hour reception and free Wi-Fi access.',
       imageURL: 'https://s-ec.bstatic.com/xdata/images/hotel/square600/13072445.webp?k=9c12bda1f8c02f76fa0ea4a6ea00e6f7074753025bc0c187f7b6fc3076343401&o='
