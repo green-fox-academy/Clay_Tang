@@ -1,4 +1,4 @@
-let data = {
+export default{
   filters: {
     'Star rating': [{
         name: '1 star',

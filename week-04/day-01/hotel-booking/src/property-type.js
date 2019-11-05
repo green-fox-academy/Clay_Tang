@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function PropertyType(props) {
-  let filter = props.filters('Property type');
+  let filter = props.filters['Property type'];
   const propertyTypeStyle = {
     'display': 'flex',
     'flexDirection': 'column',
