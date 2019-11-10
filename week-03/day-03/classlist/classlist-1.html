@@ -35,8 +35,23 @@
       Make apple red by adding a .red class
       Make balloon less balloon-like (change its shape)
     </script>
-    OR-->
-  <script src="./classlist-1.js"></script>
+    OR
+    <script src="classlist-1.js"></script> -->
+  <script>
+    let fourthP = document.querySelector('p:nth-of-type(4)');
+    if (fourthP.classList.contains('dolphin')) {
+      document.querySelector('.apple').textContent = 'pear';
+    }
+
+    let firstP = document.querySelector('p:nth-of-type(1)');
+    if (firstP.classList.contains('cat')) {
+      document.querySelector('.cat').textContent = 'dog';
+    }
+
+    document.querySelector('.apple').classList.add('red');
+    document.querySelector('.balloon').classList.replace('balloon','pear');
+
+  </script>
 </body>
 
 </html>

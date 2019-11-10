@@ -6,4 +6,4 @@ document.querySelectorAll('li').forEach((li, index) => {
   li.textContent = arr[index];
 })
 
-document.querySelector('ul').classList.add('color');
+document.querySelector('ul').classList.add('limeGreen');

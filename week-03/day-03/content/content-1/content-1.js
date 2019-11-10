@@ -1,8 +1,14 @@
 'use strict';
 
-let lastOneContent = document.querySelector('.animals').textContent;
+let lastOne = document.querySelector('.animals');
 
+// task 1
 let p = document.querySelectorAll('p');
+// p.forEach(p => {
+//   p.textContent = lastOne.textContent;
+// })
+
+// task 2
 p.forEach(p => {
-  p.textContent = lastOneContent;
+  p.innerHTML = lastOne.innerHTML;
 })

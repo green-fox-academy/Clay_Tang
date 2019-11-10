@@ -25,11 +25,17 @@
   </div>
 
   <!-- You can work in the html or in a separate js file. Like:
-    <script>
-      Turn the party on and off by clicking the button. (the whole page)
-    </script>
-    OR -->
-    <script src="./events-1.js"></script> 
+<script>
+  Turn the party on and off by clicking the button. (the whole page)
+</script>
+OR
+<script src="events-1.js"></script> -->
+  <script>
+    var button = document.querySelector('button');
+    button.onclick = function(){
+      document.querySelector('body').classList.toggle('party');
+    }
+  </script>
 </body>
 
 </html>
