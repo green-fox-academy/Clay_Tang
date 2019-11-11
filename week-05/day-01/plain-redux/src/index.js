@@ -8,12 +8,6 @@ import Reducer from './Reducer';
 
 const store = createStore(Reducer);
 
-const subscribe = store.subscribe(() => {
-    console.log(store.getState())
-});
-
-subscribe();
-
 ReactDOM.render(
     <Provider store={store}>
         <App />
