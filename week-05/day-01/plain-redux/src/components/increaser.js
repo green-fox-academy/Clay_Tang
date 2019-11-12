@@ -1,7 +1,9 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import {
+  connect
+} from 'react-redux';
 
-const Increaser = (props) => {  
+const Increaser = (props) => {
   return (
     <div className="increaser">
       <h2>The Increaser</h2>
@@ -20,7 +22,9 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
   return {
     increaser: () => {
-      dispatch({ type: 'INCREASE' })
+      dispatch({
+        type: 'INCREASE'
+      })
     }
   }
 }

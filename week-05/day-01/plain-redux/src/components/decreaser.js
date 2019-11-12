@@ -1,5 +1,7 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import {
+  connect
+} from 'react-redux';
 
 const Decreaser = (props) => {
   return (
@@ -20,7 +22,9 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
   return {
     decreaser: () => {
-      dispatch({ type: 'DECREASE' })
+      dispatch({
+        type: 'DECREASE'
+      })
     }
   }
 }

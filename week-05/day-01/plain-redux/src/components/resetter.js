@@ -1,5 +1,7 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import {
+	connect
+} from 'react-redux';
 
 const Resetter = (props) => {
 	return (
@@ -19,7 +21,9 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
 	return {
 		resetter: () => {
-			dispatch({ type: 'RESET' })
+			dispatch({
+				type: 'RESET'
+			})
 		}
 	}
 }

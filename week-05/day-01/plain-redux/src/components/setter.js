@@ -1,5 +1,9 @@
-import React, { useState } from 'react';
-import { connect } from 'react-redux';
+import React, {
+  useState
+} from 'react';
+import {
+  connect
+} from 'react-redux';
 
 const Setter = (props) => {
   const [value, setValue] = useState('')
@@ -12,7 +16,7 @@ const Setter = (props) => {
     props.setter(parseInt(value))
     setValue('')
   }
-  
+
   return (
     <div className="setter">
       <h2>The Setter</h2>
@@ -32,7 +36,10 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
   return {
     setter: (number) => {
-      dispatch({ type: 'SET', amount: number })
+      dispatch({
+        type: 'SET',
+        amount: number
+      })
     }
   }
 }

@@ -13,7 +13,6 @@ function App() {
       <Decreaser />
       <Resetter />
       <Setter />
-      
     </div>
   );
 }
