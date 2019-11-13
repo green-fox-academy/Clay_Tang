@@ -44,14 +44,22 @@ class App extends React.Component {
       'form': {
         display: 'flex',
         flexDirection: 'column',
-        width: '250',
-        alignItems: 'center',
+        width:'250px',
+        justifyContent: 'center',
+        border:'solid black 1px'
+      },
+      'App':{
+        display:'flex',
+        justifyContent: 'center',
+        marginTop:'50px',      
       }
+
     })
 
     return (
-      <div className="App">
+      <div className={css(styles.App)}>
         <form onSubmit={this.handleSubmit} className={css(styles.form)}>
+          <h3>Event Registration</h3>
           <input type="text" name="firstName" placeholder="First Name" onChange={this.handleChange}/>
           <input type="text" name="lastName" placeholder="Last Name" onChange={this.handleChange}/>
           <input type="email" name="email" placeholder="Email Address" onChange={this.handleChange}/>
