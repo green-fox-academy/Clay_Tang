@@ -46,16 +46,23 @@ class App extends React.Component {
       'form': {
         display: 'flex',
         flexDirection: 'column',
-        width: '250',
+        width: '250px',
         alignItems: 'center',
+        border:'solid black 1px'
+      },
+      'App': {
+        display: 'flex',
+        justifyContent: 'center',
+        marginTop: '50px'
       }
     })
 
     let checkingValid = this.handleCheckingValid();
     
     return (
-      <div className="App">
+      <div className={css(styles.App)}>
         <form onSubmit={this.handleSubmit} className={css(styles.form)}>
+          <h3>User Registration</h3>
           <input type="text" name="username" placeholder="username" onChange={this.handleChange}/>
           <input type="email" name="emailAddress" placeholder="email address" onChange={this.handleChange}/>
           <input type="password" name="password" placeholder="password" onChange={this.handleChange}/>
