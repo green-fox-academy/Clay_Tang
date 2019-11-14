@@ -6,9 +6,11 @@
   </head>
   <body>
     <h1>Things to do today</h1>
-    <% todos.forEach(value => { %>
-      <li><%= value %></li>
-    <% }) %>
+    <ul>
+      <% todos.forEach(value => { %>
+        <li><%= value %></li>
+      <% }) %>
+    </ul>
 
   </body>
 </html>
