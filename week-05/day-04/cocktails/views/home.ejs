@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>cocktails</title>
+  <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+
+<body>
+  <h1>Cocktails</h1>
+  <nav>
+    <ul>
+      <li><a href='/'=>ALL</a></li>
+      <% alcoholList.forEach(value => { %>
+      <li>
+        <a href='?alcohol=<%= value %>'>
+          <%= value.toUpperCase() %>
+        </a>
+      </li>
+      <% }) %>
+    </ul>
+  </nav>
+  <table>
+    <thead>
+      <tr>
+        <th>NAME</th>
+        <th>PRICE</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% cocktails.forEach(value => { %>
+        <tr class="content">
+          <td>
+            <div class="name">
+              <strong><%= value.name %></strong>
+              <% if (!value.isAlcoholic){ %>
+              <span>(non-alcoholic)</span>
+              <% } %>
+            </div>
+            <div>
+              <%= value.contains %>
+            </div>
+          </td>
+          <td>
+            <strong><%= value.price %> Ft</strong>
+          </td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
+</body>
+
+</html>
