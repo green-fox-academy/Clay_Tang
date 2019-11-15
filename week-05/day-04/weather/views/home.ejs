@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Weather</title>
+  <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+
+<body>
+  <main class="home">
+    <% forecasts.forEach(value => { %>
+      <a href="/cities/<%= value.city %>">
+        <div class="city">
+          <h2><%= value.city %></h2>
+          <div><%= value.location %></div>
+        </div>
+        <div>
+          <div class="temp"><%= value.weather[0].temp %>&deg;C</div>
+        </div>
+        <div>
+          <img src="/static/assets/<%= value.weather[0].icon %>.png" alt="<%= value.weather[0].icon %>">
+        </div>
+      </a>
+    <% }) %>
+  </main>
+</body>
+
+</html>

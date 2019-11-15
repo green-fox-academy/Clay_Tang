@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Weather</title>
+  <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+
+<body>
+  <main class="details">
+    <h2><%= forecasts.city %></h2>
+    <section>
+      <% forecasts.weather.forEach(value => { %>
+        <div class="content">
+          <div class="img">
+            <img src="/static/assets/<%= value.icon %>.png" alt="<%= value.icon %>">
+          </div>
+          <div class="temp">
+            <%= value.temp %>&deg;C
+          </div>
+          <div class="message">
+            <%= value.message %>
+          </div>
+        </div>
+      <% }) %>
+    </section>
+  </main>
+</body>
+
+</html>
