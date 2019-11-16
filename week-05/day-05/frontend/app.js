@@ -12,6 +12,18 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
+app.get('/doubling', (req, res) => {
+  const input = req.query;
+  if(!input){
+    res.send({error:'Please provide an input!'});
+  } else{
+    res.send({
+      received:input,
+      result: input * 2
+    });
+  }
+})
+
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
 });
