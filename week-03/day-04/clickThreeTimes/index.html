@@ -10,23 +10,25 @@
 
 <body>
   <button>button</button>
-  <p hidden>5 seconds elapsed and clicked 3 times</p>
+  <p></p>
   <script>
     let button = document.querySelector('button');
     let p = document.querySelector('p');
-    let counter = 0;
-    let fiveSec = false;
+    let count = 0;
+    let fiveSecPassed = false;
 
-    this.addEventListener('load', () => {
+    window.addEventListener('load', () => {
       setTimeout(() => {
-        fiveSec = true;
-      }, 5000)
+        fiveSecPassed = true;
+      }, 5000);
     })
 
     button.addEventListener('click', () => {
-      counter += 1;
-      if (fiveSec && counter > 3) {
-        p.removeAttribute('hidden');
+      if (fiveSecPassed) {
+        count += 1;
+        if (count >= 3) {
+          p.textContent = '5 seconds elapsed and clicked 3 times';
+        }
       }
     })
   </script>

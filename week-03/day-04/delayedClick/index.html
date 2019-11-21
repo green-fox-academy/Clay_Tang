@@ -10,14 +10,14 @@
 
   <body>
     <button>click</button>
-    <p hidden>2 seconds ellapsed</p>
+    <p></p>
 
     <script>
       let button = document.querySelector('button');
       let p = document.querySelector('p');
-      button.addEventListener('click', event => {
+      button.addEventListener('click', () => {
         setTimeout(() => {
-          p.toggleAttribute('hidden');
+          p.textContent = '2 seconds ellapsed';
         }, 2000)
       })
     </script>
