@@ -3,21 +3,17 @@ const data = require('./data/data');
 module.exports = function(app){
   app.get('/', function(req, res){
     res.render('home', {
-      forecasts : data.forecasts
+      forecasts: data.forecasts
     })
   })
 
   app.get('/cities/:city', function(req, res){
-    let selectedCity;
-    data.forecasts.forEach(value => {
-      if(value.city == req.params.city){
-        selectedCity = value;
+    data.forecasts.forEach(forecast => {
+      if(forecast.city === req.params.city){
         res.render('details', {
-          forecasts : selectedCity
+          forecasts: forecast
         })
       }
     })
-    
   })
 };
-
